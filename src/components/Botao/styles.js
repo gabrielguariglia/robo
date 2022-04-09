@@ -3,7 +3,7 @@ import { theme } from '../../styles/theme';
 
 export const styles = StyleSheet.create({
   botao: {
-    backgroundColor: theme.colors.blue,
+    backgroundColor: theme.cores.blue,
     height: 50,
     width: 200,
     borderRadius: 50,
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   textoBotao: {
-    color: theme.colors.white,
+    color: theme.cores.white,
     fontSize: 16
   },
 });
