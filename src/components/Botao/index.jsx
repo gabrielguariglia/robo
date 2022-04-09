@@ -35,9 +35,10 @@ export function Botao() {
     <View>
       <input id="texto" type="text" />
     <TouchableOpacity
-      style={styles.botao}
       activeOpacity={.3}
       onPress={falar}
+      disabled={falando}
+      style={styles.botao}
     >
       <Text style={styles.textoBotao}>
         Falar

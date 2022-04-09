@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   descricao: {
-    fontFamily: theme.fontes.primary400,
+    fontFamily: theme.fontes.primary700,
     color: theme.cores.preto,
     fontSize: 21,
     lineHeight: 20,
