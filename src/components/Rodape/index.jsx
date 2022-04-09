@@ -9,8 +9,10 @@ export function Rodape(props) {
     return (
 
         <View>
+            <Text style={styles.descricao}>
+                Digite para o robo falar!
+            </Text>
             <View style={styles.rodape}>
-
                 <Botao />
             </View>
         </View>

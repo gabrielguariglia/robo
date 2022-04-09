@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { theme } from '../../styles/theme';
 
 export const styles = StyleSheet.create({
   rodape: {
@@ -6,5 +7,12 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
+  },
+  descricao: {
+    fontFamily: theme.fontes.primary400,
+    color: theme.cores.preto,
+    fontSize: 21,
+    lineHeight: 20,
+    marginVertical: 10
   }
 });

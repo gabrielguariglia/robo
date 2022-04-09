@@ -1,10 +1,10 @@
 export const theme = {
     cores: {
-      white: '#f7f7f7',
-      gray: '#afaca3',
-      red: '#A61B34',
-      blue: '#6A5ACD',
-      black: '#000000'
+      branco: '#f7f7f7',
+      cinza: '#afaca3',
+      vermelho: '#A61B34',
+      azul: '#6A5ACD',
+      preto: '#000000'
     },
   
     fontes: {

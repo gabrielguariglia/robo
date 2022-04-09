@@ -46,7 +46,7 @@ export function Botao() {
       <Entypo 
       name="megaphone" 
       size={24} 
-      color= {theme.cores.white}
+      color= {theme.cores.branco}
       />
     </TouchableOpacity>
     </View>
