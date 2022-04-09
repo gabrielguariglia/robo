@@ -1,22 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Botao } from './src/components/Botao';
-import { Rodape } from './src/components/Rodape';
+import React from 'react'
+import AppLoading from 'expo-app-loading'
+import { useFonts, Ubuntu_400Regular, Ubuntu_500Medium, Ubuntu_700Bold  } 
+       from '@expo-google-fonts/ubuntu'
+import { Robo } from './src/Telas'
 
-export default function App() {
+export default function App(){
+  const [fontsLoaded] = 
+  useFonts({ Ubuntu_700Bold, Ubuntu_400Regular, Ubuntu_500Medium })
+    if(!fontsLoaded) {
+    return <AppLoading />
+  }
   return (
-    <View style={styles.container}>
-      <Rodape/>
-      <StatusBar style="auto" />
-    </View>
-  );
+      <Robo/>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

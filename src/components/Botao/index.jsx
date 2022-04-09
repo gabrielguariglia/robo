@@ -12,16 +12,13 @@ export function Botao() {
   const [falando, setFalando] = useState(false)
   
     function falar(){
-      
+      //Pega o texto que foi digitado e coloca pro robo falar
       let frase = document.getElementById("texto").value
       Speech.speak(frase, {
         language: 'pt',
         onStart: falaIniciada,
         onDone: falaFinalizada
       })
-    }
-    function parar(){
-      Speech.stop()
     }
     const falaIniciada = () => {
       setFalando(true)
@@ -32,11 +29,13 @@ export function Botao() {
 
 
   return (
+      //Caixa de texto pra digitar o que sera falado
     <View>
       <input id="texto" type="text" />
     <TouchableOpacity
       activeOpacity={.3}
       onPress={falar}
+      //Desabilita o botão enquanto o robo esta falando
       disabled={falando}
       style={styles.botao}
     >
