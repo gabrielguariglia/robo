@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { MotiView } from 'moti';
 
 import { styles } from './styles';
 import { Botao } from '../Botao';
@@ -8,13 +9,20 @@ export function Rodape(props) {
 
     return (
 
-        <View>
-            <Text style={styles.descricao}>
-                Digite para o robo falar!
-            </Text>
-            <View style={styles.rodape}>
-                <Botao />
+        <MotiView //animação do rodapé
+            from={{ translateY: 30, opacity: 0 }}
+            animate={{ translateY: 0, opacity: 1 }}
+            transition={{ type: 'timing' }}
+            duration={3000}
+            delay={500}>
+            <View>
+                <Text style={styles.descricao}>
+                    Digite para o robo falar!
+                </Text>
+                <View style={styles.rodape}>
+                    <Botao />
+                </View>
             </View>
-        </View>
+        </MotiView>
     );
 }
