@@ -1,6 +1,6 @@
 import React from 'react';
 import { Entypo } from '@expo/vector-icons'; 
-import { TouchableOpacity, Text } from 'react-native';
+import { TouchableOpacity, Text, TextInput } from 'react-native';
 import { useState } from 'react';
 import * as Speech from 'expo-speech';
 import { View } from 'react-native-web';
@@ -10,10 +10,11 @@ import { theme } from '../../styles/theme';
 
 export function Botao() {
   const [falando, setFalando] = useState(false)
+  const [texto, setTexto] = useState();
   
     function falar(){
       //Pega o texto que foi digitado e coloca pro robo falar
-      let frase = document.getElementById("texto").value
+      let frase = texto;
       Speech.speak(frase, {
         language: 'pt',
         onStart: falaIniciada,
@@ -31,7 +32,10 @@ export function Botao() {
   return (
       //Caixa de texto pra digitar o que sera falado
     <View>
-      <input id="texto" type="text" />
+      <TextInput style={styles.caixaTexto}
+        onChangeText={(val) => setTexto(val)}
+        />
+
     <TouchableOpacity
       activeOpacity={.3}
       onPress={falar}

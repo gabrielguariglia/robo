@@ -16,4 +16,10 @@ export const styles = StyleSheet.create({
     color: theme.cores.branco,
     fontSize: 16
   },
+  caixaTexto: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  },
 });
