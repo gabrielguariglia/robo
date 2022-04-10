@@ -5,8 +5,8 @@ export const styles = StyleSheet.create({
   rodape: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   descricao: {
     fontFamily: theme.fontes.primary700,

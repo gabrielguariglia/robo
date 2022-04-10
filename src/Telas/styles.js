@@ -9,4 +9,10 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  imagem: {
+    width: -100,
+    height: 400,
+    marginBottom: 80
+
+},
 });
