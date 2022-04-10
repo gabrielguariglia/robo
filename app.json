@@ -17,11 +17,11 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "br.edu.fatecitu.robo",
+      "bundleIdentifier": "br.fatecitu.robofalante",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "br.edu.fatecitu.robo",
+      "package": "br.fatecitu.robofalante",
       "versionCode": 1
     },
     "web": {
