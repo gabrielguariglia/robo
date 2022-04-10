@@ -13,8 +13,8 @@ export function Rodape(props) {
             from={{ translateY: 30, opacity: 0 }}
             animate={{ translateY: 0, opacity: 1 }}
             transition={{ type: 'timing' }}
-            duration={3000}
-            delay={500}>
+            duration={5000}
+            delay={1000}>
             <View>
                 <Text style={styles.descricao}>
                     Digite para o robo falar!

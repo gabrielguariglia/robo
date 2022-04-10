@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-native';
 import { MotiImage } from 'moti'
 
 import { styles } from './styles';
@@ -11,11 +10,11 @@ export function FotoRobo() {
     style={styles.imagem}
       source={fotoRobo}
       resizeMode="center"
-      from={{ opacity: 0, translatey: -30 }}
-      animate={{ opacity: 1, translatey: 0 }}
+      from={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ type: 'timing'}}
-      duration={3000}
-      delay={500}
+      duration={5000}
+      delay={1000}
     />
   );
 }
